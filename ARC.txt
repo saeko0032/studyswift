@@ -1,0 +1,5 @@
+@property (strong, nonatomic) NSString* nme;
+@property (weak, nonatomic) id<....delegate> delegate;
+@property (weak,nonatomic) IBOutlet UIButton *addbtn;
+
+strong-> RC ++ => name: RC1 (Don't release name when i am interested in the object)
