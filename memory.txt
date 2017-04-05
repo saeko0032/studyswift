@@ -1,0 +1,24 @@
+- (NSMutableString)sayHelloName:(NSString*)name {
+
+  NSMutableString* sentense = [[@"Hello" stringWithAppnding:name] mutablecopy];
+  when you add collection, product become an owner of the product.
+  when you remove it, automatically send the release msg of the product.
+  
+  @autorelease {
+    // auto release
+  }
+  
+  NSMutableArray<NSString*>* words = [[NSMutableArray<NSString*> alloc] init]; // owner
+
+  NSString* str = @"Ali"; // no owner
+  [words addObject:str]; // array is owner of str, str = 1
+  
+  NSString* rstr = [word removeObject:str]; // owner(array) released to rc(str) = 0 // rstr is no owner 
+  return rstr; // return nil
+  
+  NSString* rstr = [[word removeObject:str] retain]; // rc = 1 retain ... after return, release it
+  return rstr; // return nil
+  
+  [sentence release]; // return nil
+  return sentense;
+}
