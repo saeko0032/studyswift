@@ -1,0 +1,24 @@
+.h
+
+#import 
+
+@interface NSSTring(SentenceOperation) // SentenceOperation is Category(Class) name
+@begin
+  - (NSString*)revereString;
+  - (NSString*)capitalizeSentence:(NSString*)sentence;
+  
+@end
+
+.m
+@implementation NSString(SentenceOperation)
+@begin
+
+- (NSString*)reverseString
+{
+  if (self.length == 0) {
+    return nil;
+  } else {
+    ...
+  }
+}
+@end
