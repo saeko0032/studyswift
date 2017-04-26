@@ -1,0 +1,44 @@
+Guardの使い方
+
+条件式がfalseの場合のみ処理を記述する構文。
+
+guard conditional else {
+ ...process...
+ return or break or throw
+} 
+
+func sayGoodMorning(time: Int) {
+    guard time < 9 else {
+      print("not morning")
+      return
+    }
+    print("good morning")
+}
+
+sayGoodMorning(10)
+
+// guard内には必ず、return throw breakのどれかが必要
+
+// オプショナルバインディングでよく利用される
+func printPrice(data: String) {
+    if var price = Int(data) {
+        print(price*5) // priceはifないのスコープでしか参照できない
+    }
+}
+
+printPrice("120")
+
+func printPrice(data: String) {
+    guard var price = Int(data) else {
+        return
+    }
+    print(price*5) // priceがguard抜けた後も参照できている
+}
+
+// guardの基本的な使い方
+->エラーが発生したら終了,この値は来て欲しくない,あんラップした変数を以降の処理でも使いたい
+
+guard let url = NSURL(coverPath: String) else {
+  sbort()
+}
+if (url).... <- アンラップした変数をスコープ街でも利用している
