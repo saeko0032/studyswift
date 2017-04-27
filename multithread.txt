@@ -1,0 +1,19 @@
+work multi theard as a pararelle, it's faster than sigle thread
+
+taskをmain queに登録するね
+
+deadlockに気をつけろ
+
+asynchronize -> 非同期処理(最後まで待たずに次へ）
+synchronize -> 同期処理(最後まで処理が終わってから次へ)
+
+dispache_async(queue,task) ... c function
+
+dispache_get_global_queue
+dispatch_async(dispatch_get_main_queue(),^[self.tableView reloadDate]}),
+})
+
+diapacht_queue_priority_default or number
+
+// lockが終わってから処理したい時
+dispathe_barruer_async(...) -> waiting for other thread
