@@ -1,0 +1,27 @@
+web service
+
+rest api 
+
+http
+
+ssh
+
+url
+
+uri
+
+session class
+1. upload 2. download 3. delete
+
+IOS has some class for networking stuff
+
+they wrap apple networking libraly 
+-> AFNetworking(Objective-C)
+-> AlamoFire(Swift)
+
+Response has format 
+--->SOAP(Oldest)
+NOW
+->XML
+->Json
+(for iOS: JSonSerialzation)
