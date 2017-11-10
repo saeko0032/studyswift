@@ -1,9 +1,9 @@
-import UIkite
+import UIkit
 
 Class Queue<T> {
   var storage: [String] = []
   
-  func enqueue(_value : T) {
+  func enqueue(_value: T) {
     storage.append(value)
   }
   
@@ -18,4 +18,4 @@ var first = q.dequeue()
 
 let q2 = Queue<Int>()
 q.enqueue(2)
-var first = q.dequeue()
+var second = q2.dequeue()
