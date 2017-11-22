@@ -14,7 +14,6 @@ struct User {
     let name: String
     let profileImageURL: String
     
-    
     init?(json: Any) {
         guard let dictionary = json as? [String: Any] else { return nil }
         guard let id = dictionary["id_str"] as? String else { return nil }
@@ -28,7 +27,4 @@ struct User {
         self.profileImageURL = profileImageURL
     
     }
-    
-    
-    
 }
