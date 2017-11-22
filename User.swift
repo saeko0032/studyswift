@@ -11,7 +11,7 @@ import Foundation
 struct User {
     let id: String
     let screenName: String
-    let name:String
+    let name: String
     let profileImageURL: String
     
     
